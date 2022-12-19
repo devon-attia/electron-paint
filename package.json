@@ -1,0 +1,24 @@
+{
+  "name": "electron-paint",
+  "version": "1.0.0",
+  "description": "painting app built for desktop",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devon-attia/electron-paint.git"
+  },
+  "author": "Devon Attia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devon-attia/electron-paint/issues"
+  },
+  "homepage": "https://github.com/devon-attia/electron-paint#readme",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "typescript": "^4.9.4"
+  }
+}
