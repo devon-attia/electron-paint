@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <title>Hello from Electron renderer!</title>
+    <title>Electron Paint
+    </title>
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <canvas resize></canvas>
+    <div class="left-bar"></div>
+    <div class="main">
+      <canvas resize></canvas>
+    </div>
+    <div class="right-bar"></div>
   </body>
+  <script type="text/javascript" src="./renderer.js"></script>
   <script type="text/javascript" src="./node_modules/paper/dist/paper-full.js"></script>
-  <script src="./canvas.js"></script>
+  <script type="text/javascript" src="./canvas.js"></script>
 </html>
