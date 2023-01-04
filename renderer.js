@@ -1,7 +1,7 @@
 const api = window.electronAPI;
 
 api.onNewFile((_event) => {
-    console.log("creating new file!");
+    init();
 });
 
 api.onUndo((_event) => {

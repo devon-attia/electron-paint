@@ -1,18 +1,15 @@
 paper.install(window);
-window.onload = function() {
+
+function init() {
     let canvas = document.querySelector('canvas');
+
     paper.setup(canvas);
     
-    let penTool = new Tool();
-    let path;
-
-    penTool.onMouseDown = function(event) {
-        path = new Path();
-        path.strokeColor = 'white';
-        path.add(event.point);
-    }
-
-    penTool.onMouseDrag = function(event) {
-        path.add(event.point);
-    }  
+    // TODO: Set up a default active layer and make it a white background
+    
+    // const canvasBounds = new paper.Rectangle(0, 0, canvas.width, canvas.height);
+    // canvasBounds.style = {fillColor: 'white'};
+    // paper.project.Layer = new paper.Layer({bounds: canvasBounds});
+    // paper.project.layers[0].activate();
+    
 }

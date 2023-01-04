@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <div class="left-bar"></div>
+    <div class="left-bar">
+      <a href="#" onclick="penTool.activate();">Pen</a>
+      <a href="#" onclick="eraserTool.activate();">Eraser</a>
+    </div>
     <div class="main">
       <canvas resize></canvas>
     </div>
@@ -17,4 +20,5 @@
   <script type="text/javascript" src="./renderer.js"></script>
   <script type="text/javascript" src="./node_modules/paper/dist/paper-full.js"></script>
   <script type="text/javascript" src="./canvas.js"></script>
+  <script type="text/javascript" src="./tools.js"></script>
 </html>
