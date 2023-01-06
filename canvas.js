@@ -1,8 +1,7 @@
 paper.install(window);
+let canvas = document.querySelector('canvas');
 
 function init() {
-    let canvas = document.querySelector('canvas');
-
     paper.setup(canvas);
     
     // TODO: Set up a default active layer and make it a white background
