@@ -14,8 +14,7 @@ penTool.onMouseDrag = function(event) {
     path.add(event.point);
 }
 penTool.onMouseUp = function(event) {
-    console.log(path);
-    console.log(paper.project.activeLayer);
+    console.log(paper.project.layers);
 }
 
 

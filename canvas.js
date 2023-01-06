@@ -4,11 +4,8 @@ let canvas = document.querySelector('canvas');
 function init() {
     paper.setup(canvas);
     
-    // TODO: Set up a default active layer and make it a white background
-    
-    // const canvasBounds = new paper.Rectangle(0, 0, canvas.width, canvas.height);
-    // canvasBounds.style = {fillColor: 'white'};
-    // paper.project.Layer = new paper.Layer({bounds: canvasBounds});
-    // paper.project.layers[0].activate();
-    
+    // set a default background on new files
+    background = new Path.Rectangle(0, 0, canvas.width, canvas.height);
+    background.style = {fillColor: 'white'};
+    paper.project.layers[0].addChild(background);   
 }
