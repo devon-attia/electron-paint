@@ -33,6 +33,15 @@ const createWindow = () => {
       ]
     },
     {
+      label: 'Layer',
+      submenu: [
+         {
+           label: 'New Layer',
+           click: () => win.webContents.send('new-layer')
+         }
+      ]
+    },
+    {
        label: 'Help',
        submenu: [
           {
