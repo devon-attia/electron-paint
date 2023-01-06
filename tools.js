@@ -18,6 +18,7 @@ penTool.onMouseUp = function(event) {
 }
 
 
+// TODO: eraser needs to subtract from paths to erase. blendmode: destination-out does not work with layering.
 eraserTool = new Tool();
 eraserTool.onMouseDown = function(event) {
     path = new Path();
