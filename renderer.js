@@ -9,8 +9,6 @@ api.onUndo((_event) => {
 });
 
 api.onNewLayer((_event) => {
-    // add the new layer and set it to active
-    paper.project.addLayer(new Layer());
-    paper.project.layers[paper.project.layers.length-1].activate();
+    paper.project.addLayer(new Layer({blendMode: 'source-over'})).activate();
     console.log(paper.project.layers);
 });
